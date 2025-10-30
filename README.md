@@ -1,11 +1,17 @@
-# 🧩 AI Project Portfolio – Harikrishnan K S
+# 👋 Hi, I'm Harikrishnan K S
 
-Welcome to my AI engineering portfolio.  
-This repository collects several independent machine learning and computer vision projects I've developed across edge, cloud, and research environments.
-
-Each subproject demonstrates an aspect of production-ready AI systems — from real-time defect detection on Jetson devices to LLM-based RAG implementations.
+### 🧩 AI & MLOps Engineer | Computer Vision • Edge AI • LLMs
+Building intelligent systems that run everywhere — from cloud GPUs to embedded Jetsons.
 
 ---
+
+### 🧑‍💻 About Me
+- 🧠 **AI & MLOps Engineer (5+ yrs)** designing scalable ML pipelines for computer vision and LLM workflows.  
+- 🚀 Experienced in **deploying real-time models** on Jetson, Kubernetes, and Cloud Run.  
+- ⚙️ Skilled in **PyTorch, TensorFlow, MLflow, FastAPI, and CI/CD pipelines** for AI systems.  
+- 🎯 Passionate about **productionizing ML** — model evaluation, drift tracking, telemetry, and optimization.  
+- 🏗️ Currently leading **defect-inspection and RAG-based vision+LLM** stacks at **AI BUILD, London**.  
+
 
 ## 🔬 Projects Overview
 
