@@ -1,47 +1,103 @@
-# 👋 Hi, I'm Harikrishnan K S
+# 🧩 AI Project Portfolio – Harikrishnan K S
 
-### 🧩 AI & MLOps Engineer | Computer Vision • Edge AI • LLMs
-Building intelligent systems that run everywhere — from cloud GPUs to embedded Jetsons.
+Welcome to my AI engineering portfolio.  
+This repository collects several independent machine learning and computer vision projects I've developed across edge, cloud, and research environments.
 
----
-
-### 🧑‍💻 About Me
-- 🧠 **AI & MLOps Engineer (5+ yrs)** designing scalable ML pipelines for computer vision and LLM workflows.  
-- 🚀 Experienced in **deploying real-time models** on Jetson, Kubernetes, and Cloud Run.  
-- ⚙️ Skilled in **PyTorch, TensorFlow, MLflow, FastAPI, and CI/CD pipelines** for AI systems.  
-- 🎯 Passionate about **productionizing ML** — model evaluation, drift tracking, telemetry, and optimization.  
-- 🏗️ Currently leading **defect-inspection and RAG-based vision+LLM** stacks at **AI BUILD, London**.  
+Each subproject demonstrates an aspect of production-ready AI systems — from real-time defect detection on Jetson devices to LLM-based RAG implementations.
 
 ---
 
-### 🛠️ Tech Stack
-**Languages:** Python, C++, SQL  
-**AI & ML:** PyTorch, TensorFlow, Scikit-learn, OpenVINO  
-**MLOps:** MLflow, W&B, Kubeflow, Prometheus, GitLab CI/CD  
-**Cloud & Edge:** AWS, GCP, NVIDIA Jetson, Docker, K8s, Cloud Run  
-**Web & APIs:** FastAPI, Flask  
-**CV & Robotics:** OpenCV, ROS, Gazebo, GStreamer, PostGIS  
+## 🔬 Projects Overview
+
+### 1️⃣ Industrial Defect Detection
+**Folder:** [`defect-detection/`](./defect-detection)  
+**Description:** End-to-end visual inspection pipeline combining synthetic-data generation, auto-labelling, and YOLOv8-based defect detection.  
+**Highlights:**
+- Real-time inference on NVIDIA Jetson Orin (TensorRT optimized)
+- Hard-negative mining and augmentation for rare defect classes  
+- Integrated FastAPI microservice for REST inference  
+**Stack:** PyTorch • YOLOv8 • OpenCV • CUDA • TensorRT • FastAPI  
 
 ---
 
-### 🔬 Featured Projects
-| Project | Description | Stack |
-|----------|--------------|--------|
-| [**Industrial Defect Inspection**](https://github.com/Demonhari/inv) | End-to-end defect detection using YOLOv8, auto-labelling, and multi-object tracking on Jetson Orin. | PyTorch, CUDA, TensorRT, FastAPI |
-| [**HealthBench Evaluator**](https://github.com/Demonhari/simple-evals) | Evaluation framework for OpenAI HealthBench models; auto-eval of GPT-4 vs fine-tuned baselines. | Python, OpenAI, LangChain |
-| [**5G Handoff Optimizer**](#) | Deep Q-learning agent for telecom hand-off optimization. | Keras, MATLAB |
-| [**RAG Vision Assistant**](#) | GPT-4 + Vision model that explains detection results interactively. | LLMs, RAG, Postgres, pgvector |
+### 2️⃣ Drone Vision & Aerial Detection
+**Folder:** [`drone_detection/`](./drone_detection)  
+**Description:** Object detection and tracking from drone-mounted cameras with IMU fusion and GPS metadata alignment.  
+**Highlights:**
+- Multi-view geometry + camera calibration  
+- YOLOv8 tracking integrated with OpenCV and GeoPandas  
+- Edge-ready model compression for Jetson Nano  
+**Stack:** PyTorch • OpenCV • GeoPandas • DeepSORT  
 
 ---
 
-### 📈 Highlights
-- 🧠 Built **real-time defect-inspection AI** for industrial robotics.  
-- ☁️ Deployed **multi-modal perception pipelines** across cloud + edge devices.  
-- 🔁 Integrated **retrieval-augmented generation (RAG)** for visual reasoning.  
-- 📊 Established **CI/CD pipelines** tracking latency, drift, and cost metrics.  
-- 🏆 MSc in Artificial Intelligence – *University of Surrey, UK*  
+### 3️⃣ Edge Vision Defect Detector
+**Folder:** [`edge_vision_defect_detector/`](./edge_vision_defect_detector)  
+**Description:** Lightweight version of the industrial defect system for low-power embedded devices.  
+**Highlights:**
+- GStreamer and CUDA accelerated image pipelines  
+- Multi-threaded inference with adaptive frame skipping  
+- Supports both RGB and thermal input feeds  
+**Stack:** TensorRT • GStreamer • Jetson SDK • Python  
 
 ---
 
-### 📫 Connect with Me
-[📧 Email](mailto:harishajidasan@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/harishaji/) • [🐙 GitHub](https://github.com/Demonhari)
+### 4️⃣ Fraud Detection System
+**Folder:** [`fraud-detection/`](./fraud-detection)  
+**Description:** Machine learning framework for detecting anomalous financial transactions and transfers.  
+**Highlights:**
+- Feature engineering with statistical and time-series features  
+- Model comparison: LightGBM, XGBoost, Random Forest  
+- Pipeline for real-time stream inference (Kafka-ready)  
+**Stack:** Scikit-learn • LightGBM • Pandas • FastAPI  
+
+---
+
+### 5️⃣ Money Transfer Simulation
+**Folder:** [`money_transfer/`](./money_transfer)  
+**Description:** Prototype of a secure transaction simulator for testing fraud-detection modules.  
+**Highlights:**
+- Generates synthetic ledger data for ML model training  
+- Simulates user transaction patterns with time-based rules  
+- Includes data visualizations of transfer networks  
+**Stack:** Python • Pandas • NetworkX • Matplotlib  
+
+---
+
+### 6️⃣ Retrieval-Augmented Generation (RAG) Implementation
+**Folder:** [`rag-implementation/`](./rag-implementation)  
+**Description:** Vision-LLM system that retrieves context and generates structured responses.  
+**Highlights:**
+- Integrated GPT-4 / GPT-3.5 for visual reasoning and command understanding  
+- Vector search with pgvector in PostgreSQL  
+- Uses Weave / LangChain workflows for orchestration  
+**Stack:** LangChain • OpenAI API • FastAPI • PostgreSQL (pgvector)  
+
+---
+
+## 🧰 Tech Stack Summary
+
+| Domain | Tools / Frameworks |
+|--------|--------------------|
+| **Languages** | Python, C++, SQL |
+| **ML / DL** | PyTorch, TensorFlow, Scikit-learn, LightGBM |
+| **MLOps** | MLflow, W&B, GitLab CI, Docker, Kubernetes |
+| **Edge / CV** | TensorRT, OpenCV, GStreamer, Jetson SDK |
+| **Data** | Pandas, NumPy, PostGIS, GeoPandas |
+| **Web / APIs** | FastAPI, Flask |
+| **Cloud** | AWS, GCP, Cloud Run |
+
+---
+
+## 📊 Key Outcomes
+- 🚀 Delivered **industrial-grade defect detection** pipeline running at 30+ FPS on Jetson Orin.  
+- ⚙️ Deployed **distributed PyTorch training** with hyper-parameter search and pruning.  
+- 🧠 Implemented **GPT-4-based RAG assistant** for contextual visual explanations.  
+- 📦 Established **CI/CD pipelines** with MLflow tracking and OpenTelemetry dashboards.  
+
+---
+
+## 📫 Contact
+**Harikrishnan K S**  
+AI & MLOps Engineer | London, UK  
+📧 [harishajidasan@gmail.com](mailto:harishajidasan@gmail.com) • [🔗 LinkedIn](https://www.linkedin.com/in/harishaji/) • [🐙 GitHub](https://github.com/Demonhari)
